@@ -59,13 +59,13 @@ body {
 }
 
 .about {
-    font-size: 25px;
+    font-size: 30px;
     padding: 2px;
 }
 
 .Title {
     width: 200%;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 10px;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .e-title {
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: underline;
     padding: 20px;
     margin: 20px;
@@ -98,7 +98,7 @@ body {
 
 .e-list {
     list-style: square;
-    font-size: 20px;
+    font-size: 30px;
     padding: 40px;
     margin-top: 40px;
 }
@@ -126,7 +126,7 @@ body {
 
 
 .s-card {
-    width: 200px;
+    width: 400px;
     margin: 60px;
     border: 5px solid grey;
     box-shadow: 10px 5px 5px grey;
@@ -139,7 +139,7 @@ body {
 }
 
 .s-description {
-    font-size: 20px;
+    font-size: 28px;
     display: flex;
     width: 100%;
     height: 50%;
