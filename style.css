@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(150, 152, 248)
+}
+
+.containerH {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(92, 92, 248), rgb(158, 108, 244));
+    padding: 35px;
+    box-shadow: 20px 10px 10px grey;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.logo {
+    font-size: 40px;
+    transition: color 0.5s ease;
+    color: rgb(21, 21, 21);
+
+}
+
+.logo:hover {
+    color: rgb(198, 197, 197);
+}
+
+.ul-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 30px;
+    align-items: center;
+}
+
+.elem:hover {
+    color: rgb(222, 217, 217);
+}
+
+.elem {
+    transition: color 0.5s ease;
+    color: rgb(48, 47, 47);
+}
+
+.hero {
+    background-color: rgb(200, 200, 254);
+    display: flex;
+    margin-top: 12px;
+    padding: 300px;
+    padding-top: 250px;
+    height: 50%;
+    justify-content: space-around;
+    box-shadow: 20px 10px 10px gray;
+    height: 36vh;
+
+}
+
+.about {
+    font-size: 39px;
+    padding: 2px;
+}
+
+.Title {
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.descripiton {
+    font-size: 32px;
+}
+
+.h-img {
+    border-radius: 100px;
+    margin-left: 400px;
+    height: 50vh;
+    margin-bottom: 200px;
+}
+
+.education {
+    display: flex;
+   justify-content: space-around;
+   margin-top: 40px;
+   border: 10px solid grey;
+   border-radius: 20px;
+   box-shadow: 20px 10px 10px gray;
+}
+
+.e-title {
+    font-size: 50px;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+.e-list {
+    list-style: square;
+    font-size: 35px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+
+.e-img {
+    padding: 20px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+
+}
+
+.skills{
+    display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.s-title{
+   font-size: 80px; 
+   text-decoration: underline;
+}
+
+
+.s-card{
+    width: 510px;
+    margin: 60px;
+    border: 5px solid grey; 
+    box-shadow: 10px 5px 5px grey;
+}
+.s-img{
+    width: 90%;
+    display: flex;
+    padding: 5%;
+}
+.s-description{
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-right: 5%;
+    border: 1px solid black;
+}
