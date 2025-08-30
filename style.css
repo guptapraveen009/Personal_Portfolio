@@ -145,7 +145,7 @@ body {
     border: 1px solid black;
 }
 
-@media (max-width : 425px) {
+@media (min-width : 325px ) and (max-width : 1024px) {
     .containerH {
         width: 992px;
         display: flex;
