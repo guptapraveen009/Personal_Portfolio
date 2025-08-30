@@ -21,7 +21,6 @@ body {
     font-size: 28px;
     transition: color 0.5s ease;
     color: rgb(21, 21, 21);
-
 }
 
 .logo:hover {
@@ -54,8 +53,6 @@ body {
     height: 30%;
     justify-content: space-around;
     box-shadow: 20px 10px 10px gray;
-    
-
 }
 
 .about {
@@ -71,7 +68,7 @@ body {
 
 .descripiton {
     width: 100%;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .h-img {
@@ -146,4 +143,137 @@ body {
     text-align: center;
     margin-right: 5%;
     border: 1px solid black;
+}
+
+@media (max-width : 425px) {
+    .containerH {
+        width: 992px;
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, rgb(92, 92, 248), rgb(158, 108, 244));
+        padding: 35px;
+        box-shadow: 20px 10px 10px grey;
+        border-radius: 10px;
+        margin: 2px;
+    }
+
+    .logo {
+    font-size: 12px;
+    transition: color 0.5s ease;
+    color: rgb(21, 21, 21);
+}
+
+.ul-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 15px;
+    align-items: center;
+}
+
+.hero {
+    width: 878px;
+    background-color: rgb(200, 200, 254);
+    display: flex;
+    margin-top: 12px;
+    padding: 100px;
+    padding-top: 150px;
+    height: 30%;
+    justify-content: space-between;
+    box-shadow: 20px 10px 10px gray;
+}
+
+.about {
+    font-size: 16px;
+    padding: 2px;
+}
+
+.Title {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.descripiton {
+    width: 100%;
+    font-size: 10px;
+}
+
+.h-img {
+    border-radius: 100px;
+    margin-left: 400px;
+    margin-bottom: 200px;
+    height: 40vh;
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border: 10px solid grey;
+    border-radius: 20px;
+    box-shadow: 20px 10px 10px gray;
+    width: 1050px;
+}
+
+.e-title {
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+.e-list {
+    list-style: square;
+    font-size: 16px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+
+.e-img {
+    padding: 20px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+
+}
+
+.skills {
+    display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s-title {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.s-card {
+    
+    width: 600px;
+    
+    border: 5px solid grey;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.s-img {
+    width: 90%;
+    display: flex;
+    padding: 5%;
+}
+
+.s-description {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-right: 5%;
+    border: 1px solid black;
+}
+
 }
