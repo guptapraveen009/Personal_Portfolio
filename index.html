@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Start Screen -->
+    <div class="container">
+        <div class="screen active" id="start-Screen">
+            <h1>Hi User Welcome To My World Of Development</h1>
+            <p id="note">Hello My Name Is Gupta Praveen Kumar A Graduate In BSC(Computers). Please Click Below Button To
+                Enter My World</p>
+            <button id="start-btn">Enter Praveen's World</button>
+        </div>
+        <!-- Main Screen -->
+        <div class="screen" id="Main-Screen">
+            <div id="nav-bar">
+                <p id="logo">Welcome To Praveen's World</p>
+                <ul id="sections">
+                    <i class="fa-sharp fa-solid  fa-moon" id="color-changer"></i>
+                    <li><a class="li" href="#about-section">About Me</a></li>
+                    <li><a class="li" href="#skill-section"> Skills</a></li>
+                    <li><a class="li" href="#MyWorks">Projects</a></li>
+                    <li><a class="li" href=""> Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="about-section">
+                <p id="About-Me">My name is Gupta Praveen Kumar, and I completed my BSc in Computer Science in August
+                    2025.
+
+                    I’m currently a beginner in MERN stack development. I recently completed JavaScript, which helped me
+                    understand core programming concepts, logic building, and how web applications actually work behind
+                    the scenes.
+
+                    Right now, I’m focusing on improving my skills in React, Node.js, Express, and MongoDB. As a
+                    fresher, I may not know everything yet, but I’m consistent, willing to learn, and always ready to
+                    improve. I enjoy solving problems and building small projects to practice what I learn.
+
+                    My goal is to become a confident full-stack developer and contribute to real-world projects while
+                    continuously growing my technical skills.</p>
+
+                <img class="Img" src="./images/PHOTO-2025-08-30-13-09-01.jpg" alt="Gupta Praveen Kumar Pic">
+            </div>
+
+            <div id="skill-section">
+                <h1 id="skill-head">My Skills : </h1>
+                <ul id="skill-list">
+                    <li> <img class="Image" src="./images/360_F_292887204_2wH041phSQo70eqaE9GRqFvn5MmQ4B8w.jpg"
+                            alt="frontend development image"></li>
+
+                    <li> <img class="Image" src="./images/images.png" alt="JavaScript Image"> </li>
+
+                    <li> <img class="Image" src="./images/360_F_138586261_nYWe7WbUi9ouurv6tcl2WmpLaXV1xdea.jpg"
+                            alt="SQL Image"> </li>
+
+                    <li> <img class="Image" src="./images/download.jpeg" alt="Problem Solving Image"></li>
+                </ul>
+            </div>
+            <div id="Education-Section">
+                <h1 id="e-head">My Education And Qualification : </h1>
+                <ul id="education-list">
+                    <li>
+                        <h1>10th (State Secondary Board) </h1>
+                        <p>I Have Passed Out My 10th Board From Fatima Convent High School, Sirpur Kagaznagar,
+                            Teleangana With
+                        <h2>CGPA Of 8.7 Out Of 10</h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h1>11th / 12th (Inter Board) </h1>
+                        <p>I Have Passed Out My 11th and 12th or We Can Say Inter Board From Vivekanada Inter College,
+                            Sirpur Kagaznagar, Teleangana With
+                        <h2>CGPA Of 6.5 Out Of 10</h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h1>Garduation</h1>
+                        <p>I Have Done My Garduation From Vivekanada Degree College, Sirpur Kagaznagar, Teleangana Which
+                            Comes Under kakatiya Universty , Warangal , With
+                        <h2>CGPA Of 6.90 Out Of 10</h2>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="MyWorks">
+                <h1 id="head">My Work : </h1>
+                <div id="my-work">
+                    <p>The Below Projects Is A Quiz Project Made By Html , CSS , JavaScript Which Provides 5 Basic
+                        Questions And Multiple Questions On Each Topic Which Is Given In DropDown List Choose Topic And
+                        You Will Get 10Questions For Each Topic
+                        <a target="_blank" class="projects" href="https://github.com/guptapraveen009/Quiz-Game">Quiz
+                            Project</a>
+                    </p>
+
+                    <p>This project is a Hotstar Homepage UI Clone created to replicate the design and layout of the
+                        Disney+ Hotstar platform.
+
+                        The goal of this project is to recreate the visual appearance of the original streaming
+                        platform, focusing purely on layout, styling, and user interface design. <a target="_blank"
+                            class="projects" href="https://github.com/guptapraveen009/Hotstar-Clone">Hotstar Clone
+                            Project</a></p>
+
+
+                    <p>This project is a Netflix Homepage UI Clone created to replicate the design and layout of the
+                        Netflix streaming platform.
+
+                        The main objective of this project is to recreate the visual appearance and structure of the
+                        original platform while focusing on layout and styling.
+                        <a target="_blank" class="projects"
+                            href="https://github.com/guptapraveen009/Netflix-Clone">Netflix Clone
+                            Project</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h3 id="contact-head">Contact Info : </h3>
+                <form action="post">
+                    <label for="Name">Enter Your Full Name : </label>
+                    <input type="text" value="" placeholder="Enter Your Full Name" id="Name">
+
+                    <label for="Number">Enter Your Phone Number : </label>
+                    <input type="tel" value="" placeholder="Enter Phone Number" id="Number">
+
+                    <label for="E-mail">Enter Your Email : </label>
+                    <input type="email" value="" placeholder="Enter YourEmail" id="E-mail">
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50">
+                                Default text goes here...
+                    </textarea>
+                     <button id="submit">Submit</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
