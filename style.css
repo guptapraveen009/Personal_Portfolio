@@ -419,9 +419,9 @@ input{
 }
 
 .tools .Image{
-      width: 150px;   /* fix width */
-    height: 100px;  /* fix height */
-    object-fit: cover; /* keeps image nicely cropped */
+      width: 150px;   
+    height: 100px; 
+    object-fit: cover;
     border-radius: 5px;
 }
 .tools h1{
@@ -487,28 +487,32 @@ input{
     #skill-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 3rem;
         margin-left: 0;
     }
 
   
     #skill-list .Image {
-        width: 100%;
+        width: fit-content;
         height: 120px;
         object-fit: cover;
         border-radius: 5px;
+
     }
 
 
     .tools {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 15px;
         margin: 1rem;
     }
 
     .tools .Image {
-        width: 100%;
+        display: flex;
+        width: fit-content;
         height: 100%;
         object-fit: cover;
         border-radius: 5px;
