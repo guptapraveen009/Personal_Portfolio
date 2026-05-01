@@ -427,7 +427,7 @@ input{
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width: 768px) {
+@media (min-width: 400px) and (max-width :1042px) {
 
     body {
         padding: 10px;
