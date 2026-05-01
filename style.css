@@ -483,7 +483,9 @@ input{
 
     .Image {
         width: 100%;
-        height: auto;
+        height: auto;  
+    object-fit: cover; 
+    border-radius: 5px;
     }
 
     #Education-Section {
@@ -527,6 +529,13 @@ input{
     background-color: #2a2a2a;
     color: antiquewhite;
 }
+ .tools .Image{
+     width: 100%;   
+     height: auto;  
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
 }
 
 
