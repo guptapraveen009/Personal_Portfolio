@@ -403,6 +403,14 @@ input{
    flex-wrap: wrap;
    margin: 3rem;
     gap: 1rem;
+    padding: 2rem;
+}
+
+body.Dark .tools{
+      background: #2a2a2a;
+    color: white;
+    border-color: #BBD5ED;
+    box-shadow: 0 5px 5px #BBD5ED;
 }
 
 .tools li{
