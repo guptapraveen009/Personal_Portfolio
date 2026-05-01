@@ -224,9 +224,9 @@ body.Dark #skill-list {
 }
 
 .Image {
-    width: 150px;   /* fix width */
-    height: 100px;  /* fix height */
-    object-fit: cover; /* keeps image nicely cropped */
+    width: 150px;   
+    height: 100px;  
+    object-fit: cover; 
     border-radius: 5px;
 }
 
