@@ -5,20 +5,23 @@
 }
 
 body {
-    background-color: ivory;
+    background: linear-gradient(120deg , #ffff , #b5eef7) ;
     display: flex;
     justify-content: center;
     align-items: center;
+   
     padding: 1rem;
     min-height: 100vh;
     font-family: sans-serif;
 }
 body.Dark {
-    background-color: #121212;
+    background: #121212;
 }
 
 .container {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(86, 62, 62);
     border-radius: 10px;
     box-shadow: 0 5px 5px gray;
     width: 100%;
@@ -43,7 +46,7 @@ body.Dark .container {
 }
 
 #start-Screen {
-    background-color: rgb(253, 253, 203);
+    background: linear-gradient(135deg , #b9f3e3 , #8e86c1);
     padding: 50px;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +55,7 @@ body.Dark .container {
     margin: 5px;
     border-radius: 10px;
 }
+
 
 h1 {
     font-size: 1.5rem;
@@ -65,34 +69,39 @@ h1 {
 
 button {
     font-size: 1.5rem;
-    background-color: #fce3c8;
+    background: linear-gradient(100deg ,#E5EAFA , #8e86c1 );
     border: 5px solid white;
     border-radius: 10px;
     padding: 10px;
-    color: rgb(233, 198, 153);
+    color: rgb(30, 30, 29);
 }
 
 button:hover {
-    background-color: #f1b16e;
-    color: white;
+    background: linear-gradient(110deg ,#E5EAFA , #988eda);
+    color: #D9F7FA;
     transform: scale(1.2);
     transition: transform 0.5s ease;
+}
+#Main-Screen{
+    background: linear-gradient(135deg , #b9f3e3 , #8e86c1);
+}
+body.Dark #Main-Screen{
+    background: #1a1a1a;
 }
 
 #nav-bar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid grey;
     border-radius: 10px;
     padding: 10px;
     padding-right: 24px;
-    background-color: rgb(255, 255, 255);
+    background:linear-gradient(110deg ,  #D9F7FA , #A8E0FF);
     box-shadow: 2px 5px 5px grey;
 }
 
 body.Dark #nav-bar {
-    background-color: #1a1a1a;
+    background: #1a1a1a;
     color: white;
     box-shadow: 2px 5px 5px #BBD5ED;
 }
@@ -125,7 +134,7 @@ body.Dark #sections {
 }
 
 .li:hover {
-    color: rgb(155, 155, 155);
+    color: rgb(0, 0, 0);
     transform: scale(1.2);
     transition: color 0.5s ease, transform 0.2s ease;
 }
@@ -150,7 +159,7 @@ body.Dark i {
     justify-content: space-between;
     text-align: center;
     padding: 2rem;
-    background-color: rgb(255, 255, 206);
+    background: linear-gradient(150deg);
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: 5px 10px 10px grey;
@@ -183,9 +192,11 @@ body.Dark #about-section {
    flex-direction: row;
    flex-wrap: wrap;
  
+   
 }
 
 body.Dark #skill-section {
+   
     color: white;
 }
 #skill-head{
@@ -194,27 +205,31 @@ body.Dark #skill-section {
 
 #skill-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 20px;
-    background-color: #fce3c8;
+    background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
     padding: 1rem;
-    margin: 40px auto;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 10px 10px grey;
+    position: relative;
+    
 }
 
 body.Dark #skill-list {
-    background-color: #2a2a2a;
+    background: #2a2a2a;
     box-shadow: 5px 10px 10px #BBD5ED;
 }
 
-
-
 .Image {
-    width: 300px;
-    height: 200px;
+    width: 150px;   /* fix width */
+    height: 100px;  /* fix height */
+    object-fit: cover; /* keeps image nicely cropped */
+    border-radius: 5px;
 }
+
 .Image:hover{
     transform: scale(0.869);
     transition: transform 0.5s ease;
@@ -224,14 +239,15 @@ body.Dark #skill-list {
     display: flex;
     margin-top: 3rem;
     padding: 10px;
-    background-color: rgb(253, 238, 220);
+    background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 10px 10px grey;
+   
 }
 
 body.Dark #Education-Section {
-    background-color: #1e1e1e;
+    background: #1e1e1e;
     color: white;
     box-shadow: 5px 10px 10px #BBD5ED;
 }
@@ -246,8 +262,9 @@ body.Dark #Education-Section {
 }
 
 #education-list {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
+    gap: 2rem;
     margin: 40px auto;
 }
 
@@ -256,14 +273,25 @@ body.Dark #Education-Section {
     flex-direction: row;
     margin-top: 3rem;
     padding: 2px;
-    background-color: rgb(253, 238, 220);
+    background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
+    border: 1px solid black;
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 10px;
+}
+
+#MyWorks a{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #6D6875;
     border: 1px solid black;
     box-shadow: 5px 10px 10px grey;
     border-radius: 10px;
 }
 
 body.Dark #MyWorks {
-    background-color: #1e1e1e;
+    background: #1e1e1e;
     color: white;
     box-shadow: 5px 10px 10px #BBD5ED;
 }
@@ -290,13 +318,13 @@ padding: 1rem;
     text-decoration: none;
      color: #FFEEDB;
     border: 3px solid rgb(139, 138, 138);
-   background-color: #f1b067;
+    background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
     border-radius: 5px;
     padding: 2rem;
 }
 
 body.Dark .projects {
-    background-color: #2a2a2a;
+    background: #2a2a2a;
     color: white;
     border-color: #BBD5ED;
 }
@@ -305,6 +333,7 @@ a:hover {
     transform: scale(1.11);
     transition: transform 0.2s ease;
 }
+
 
 #Main-Screen {
     background-color: blanchedalmond;
@@ -322,7 +351,7 @@ a:hover {
     text-align: start;
    padding: 2rem;
     width: 100%;
-    background-color: rgb(253, 238, 220);
+     background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
     border: 1px solid black;
     box-shadow: 5px 10px 10px grey;
     border-radius: 10px;
@@ -331,7 +360,7 @@ a:hover {
 }
 
 body.Dark #contact{
-     background-color: #2a2a2a;
+     background: #2a2a2a;
     color: white;
     border-color: #BBD5ED;
     box-shadow: 0 5px 5px #BBD5ED;
@@ -359,11 +388,42 @@ input{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 20%;
-    background-color: #2a2a2a;
+    width: 30%;
+    background: #2a2a2a;
     color: antiquewhite;
 }
 
+.tools{
+     display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 3rem;
+    gap: 1rem;
+}
+
+.tools li{
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px grey;
+    position: relative;
+}
+
+.tools .Image{
+      width: 150px;   /* fix width */
+    height: 100px;  /* fix height */
+    object-fit: cover; /* keeps image nicely cropped */
+    border-radius: 5px;
+}
+.tools h1{
+    
+    margin-right: 1rem;
+}
 
 /* ================= MOBILE RESPONSIVE ================= */
 

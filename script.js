@@ -16,9 +16,10 @@ let inputemail = document.getElementById("E-mail");
 let Message = document.getElementById("message")
 let submitbtn = document.getElementById("submit")
 
-startbtn.addEventListener("click", function start() {
+startbtn.addEventListener("click", function start(e) {
     startScreen.classList.remove("active");
     MainScreen.classList.add("active")
+    e.preventDefault()
 })
 
 Color.addEventListener("click", function color() {
