@@ -458,7 +458,7 @@ input{
 }
 
     #sections {
-        flex-direction: ro;
+        flex-direction: row;
         gap: 20px;
         font-size: 1rem;
     }
