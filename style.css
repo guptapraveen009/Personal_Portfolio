@@ -431,7 +431,7 @@ input{
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (min-width: 400px) and (max-width :1042px) {
+@media (min-width: 320px) and (max-width :1042px) {
 
     body {
         padding: 10px;
@@ -448,6 +448,7 @@ input{
         align-items: center;
         gap: 10px;
         text-align: start;
+        padding: 2rem;
     }
 
     #logo {
@@ -459,8 +460,9 @@ input{
 
     #sections {
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
         font-size: 0.8rem;
+      
     }
 
     #about-section {
@@ -551,6 +553,29 @@ input{
         text-align: center;
     }
 
+
+#contact{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+   padding: 3rem;
+    width: 100%;
+     background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
+    border: 1px solid black;
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 10px;
+   margin-top: 2rem;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   width: 100%;
+}
+
     #submit{
     display: flex;
     justify-content: flex-start;
@@ -560,25 +585,3 @@ input{
     color: antiquewhite;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
