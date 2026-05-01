@@ -450,6 +450,13 @@ input{
         text-align: start;
     }
 
+    #logo {
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2rem;
+}
+
     #sections {
         flex-direction: ro;
         gap: 20px;
