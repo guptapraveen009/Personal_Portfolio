@@ -481,14 +481,18 @@ input{
         width: 100%;
         height: auto;
     }
-
+    #skill-section{
+        width: 100%;
+    }
  
     
     #skill-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 3rem;
         margin-left: 0;
+        width: fit-content;
     }
 
   
@@ -509,6 +513,9 @@ input{
         gap: 15px;
         margin: 1rem;
     }
+    .tools li{
+        padding: 0;
+    }
 
     .tools .Image {
         display: flex;
@@ -516,7 +523,6 @@ input{
         height: 100%;
         object-fit: cover;
         border-radius: 5px;
-        padding: 1rem;
     }
 
     #skill-section {
