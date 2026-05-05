@@ -399,11 +399,14 @@ input{
 
 .tools{
      display: flex;
-   flex-direction: row;
+   border-radius: 10px;
    flex-wrap: wrap;
    margin: 3rem;
     gap: 1rem;
     padding: 2rem;
+     background: linear-gradient(100deg , #D9F7FA , #798e8ac9);
+     width: fit-content;
+     border: 1px solid black;
 }
 
 body.Dark .tools{
@@ -424,6 +427,7 @@ body.Dark .tools{
     border-radius: 5px;
     box-shadow: 5px 10px 10px grey;
     position: relative;
+    /* width: fit-content; */
 }
 
 .tools .Image{
@@ -460,16 +464,18 @@ body.Dark .tools{
     }
 
     #logo {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
     #sections {
         flex-direction: row;
-        gap: 1rem;
-        font-size: 0.8rem;
+        gap: 1.5rem;
+        font-size: 0.6rem;
+        padding: 5px;
       
     }
 
@@ -517,9 +523,8 @@ body.Dark .tools{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         gap: 15px;
-        margin: 1rem;
+        
     }
     .tools li{
         padding: 0;
@@ -528,9 +533,12 @@ body.Dark .tools{
     .tools .Image {
         display: flex;
         width: fit-content;
-        height: 100%;
         object-fit: cover;
         border-radius: 5px;
+    }
+    .tools .Image:active{
+    transform: scale(0.869);
+    transition: transform 0.5s ease;
     }
 
     #skill-section {
@@ -601,5 +609,16 @@ form{
     width: 100%;
     background-color: #2a2a2a;
     color: antiquewhite;
+}
+
+.tool-section{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+ box-sizing: border-box;
 }
 }
