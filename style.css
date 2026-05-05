@@ -439,7 +439,7 @@ body.Dark .tools{
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (min-width: 320px) and (max-width :1042px) {
+@media(max-width :1042px) {
 
     body {
         padding: 10px;
