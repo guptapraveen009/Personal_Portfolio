@@ -230,8 +230,8 @@ body.Dark #skill-list {
 }
 
 .Image {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -239,6 +239,58 @@ body.Dark #skill-list {
 .Image:hover {
     transform: scale(0.869);
     transition: transform 0.5s ease;
+}
+
+.tool-section {
+        display: flex;
+        flex-direction: row;
+      
+        margin-top: 3rem;
+        width: fit-content;
+        height: 100%;
+    }
+
+.tools {
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 1rem;
+    padding: 2rem;
+    background: linear-gradient(100deg, #D9F7FA, #798e8ac9);
+      box-shadow: 5px 10px 10px grey;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+body.Dark .tools {
+    background: #2a2a2a;
+    color: white;
+    border-color: #BBD5ED;
+    box-shadow: 0 5px 5px #BBD5ED;
+}
+
+.tools li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+    width: fit-content;
+
+}
+
+.tools .Image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tools h1 {
+
+    margin-right: 1rem;
 }
 
 #Education-Section {
@@ -403,57 +455,7 @@ input {
     color: antiquewhite;
 }
 
-.tool-section {
-        display: flex;
-        flex-direction: row;
-      
-        margin-top: 3rem;
-        width: fit-content;
-        height: 100%;
-    }
 
-.tools {
-    display: flex;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    gap: 1rem;
-    padding: 2rem;
-    background: linear-gradient(100deg, #D9F7FA, #798e8ac9);
-      box-shadow: 5px 10px 10px grey;
-    width: fit-content;
-    border: 1px solid black;
-}
-
-body.Dark .tools {
-    background: #2a2a2a;
-    color: white;
-    border-color: #BBD5ED;
-    box-shadow: 0 5px 5px #BBD5ED;
-}
-
-.tools li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 1rem;
-    border-radius: 5px;
-    position: relative;
-    /* width: fit-content; */
-}
-
-.tools .Image {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.tools h1 {
-
-    margin-right: 1rem;
-}
 
 /* ================= MOBILE RESPONSIVE ================= */
 
@@ -512,6 +514,9 @@ body.Dark .tools {
 
     #skill-section {
         width: 100%;
+           flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
     }
 
 
@@ -533,22 +538,34 @@ body.Dark .tools {
 
     }
 
+     .tool-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
 
     .tools {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 15px;
+         height: fit-content;
 
     }
 
-    .tools li {
-        padding: 0;
-    }
 
     .tools .Image {
         display: flex;
         width: fit-content;
+        flex-direction: column;
+       height: 100px;
         object-fit: cover;
         border-radius: 5px;
     }
@@ -558,11 +575,6 @@ body.Dark .tools {
         transition: transform 0.5s ease;
     }
 
-    #skill-section {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0.5rem;
-    }
 
     #Education-Section {
         flex-direction: column;
@@ -629,14 +641,5 @@ body.Dark .tools {
         color: antiquewhite;
     }
 
-    .tool-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 1rem;
-        box-sizing: border-box;
-    }
+   
 }
